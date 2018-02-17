@@ -16,9 +16,9 @@ export default class App extends Component {
       let validate=""
 
       if(this.props.shouldUsePassword)
-       (placeholder.index===0? type="email":type="password")
-      else
-        type="text"
+        (placeholder.index===0? type="email":type="password")
+      else if(this.props.shouldUseNumber)
+        (placeholder.index===2? type="number":type="text")
        
       return(
       <div className='form-group' key={placeholder.index} > 
@@ -36,6 +36,9 @@ export default class App extends Component {
            break;
           case 2:
             this.onInputChange(2,event.target.value);
+            break;
+          case 3:
+            this.onInputChange(3,event.target.value);
             break;
           }
       }} /> 

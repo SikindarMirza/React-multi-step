@@ -25,10 +25,11 @@ export  class Personal extends Component{
           <div className="form">
             <h5>PERSONAL DETAILS</h5>
             <h6>We will never sell it</h6>
-            <App placeholders={[{index:0,key:"First Name"},{key:"Last Name",index:1},{key:"Phone",index:2}]}
+            <App placeholders={[{index:0,key:"First Name"},{key:"Last Name",index:1},{key:"Phone",index:2},{key:"Address",index:3}]}
                  values={this.props.personalData}
                  setStateForThisComp={this.props.setAppLevelStateForPersonal}
                  shouldUsePassword={false}
+                 shouldUseNumber={true}
                 />
             <Link to="/social">
               <button className="button">Previous</button>

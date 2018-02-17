@@ -38,6 +38,7 @@ export  class Account extends Component{
                 values={this.props.accountData}
                 setStateForThisComp={this.props.setAppLevelStateForAccount}
                 shouldUsePassword={true}
+                shouldUseNumber={true}
             />
          
               <button className="button" type="submit">Next</button>

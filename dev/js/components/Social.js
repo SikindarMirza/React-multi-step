@@ -29,6 +29,7 @@ export  class Social extends Component{
                   values={this.props.socialData}
                   setStateForThisComp={this.props.setAppLevelStateForSocial}
                   shouldUsePassword={false}
+                  shouldUseNumber={false}
                   />
             <Link to="/">
               <button className="button">Previous</button>
