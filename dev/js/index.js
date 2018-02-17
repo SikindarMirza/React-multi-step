@@ -4,9 +4,9 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import {BrowserRouter , Route ,Switch} from 'react-router-dom';
 import App from './components/app';
-import StepA from './components/stepA';
-import StepB from './components/stepB';
-import StepC from './components/stepC';
+import Account from './components/Account';
+import Social from './components/Social';
+import Personal from './components/Personal';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
@@ -16,9 +16,9 @@ ReactDOM.render(
   <BrowserRouter>
     <div>    
       <Switch>   
-        <Route path="/stepb" component={StepB} />
-        <Route path="/stepc" component={StepC} />
-        <Route path="/"  component={StepA} /> 
+        <Route path="/social" component={Social} />
+        <Route path="/personal" component={Personal} />
+        <Route path="/"  component={Account} /> 
       </Switch>
     </div> 
 

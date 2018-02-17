@@ -1,17 +1,17 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {setAppLevelStateForB} from '../actions/index';
+import {setAppLevelStateForSocial} from '../actions/index';
 import App from './app';
 
-export  class StepB extends Component{
+export  class Social extends Component{
   constructor(props)
   {
     super(props);
     this.navToC=this.navToC.bind(this);
   }
   navToC(){
-    this.props.history.push("/stepC")
+    this.props.history.push("/personal")
   }
     render(){
         return(
@@ -26,8 +26,8 @@ export  class StepB extends Component{
             <h5>SOCIAL PROFILES</h5>
             <h6>Your preference on the social network</h6>
             <App placeholders={[{index:0,key:"Twitter"},{key:"Facebook",index:1},{key:"Google Plus",index:2}]}
-                  values={this.props.stepBData}
-                  setStateForThisComp={this.props.setAppLevelStateForB}
+                  values={this.props.socialData}
+                  setStateForThisComp={this.props.setAppLevelStateForSocial}
                   shouldUsePassword={false}
                   />
             <Link to="/">
@@ -44,10 +44,8 @@ export  class StepB extends Component{
     }
 }
 function mapStateToProps(state){
-  console.log("global b")
-  console.log(state)
   return {
-       stepBData:state.stepBData
+       socialData:state.socialData
   }
 }
-export default connect(mapStateToProps,{setAppLevelStateForB})(StepB);
+export default connect(mapStateToProps,{setAppLevelStateForSocial})(Social);

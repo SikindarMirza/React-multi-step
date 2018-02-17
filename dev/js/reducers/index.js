@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import stepAReducer from './stepA_reducer';
-import stepBReducer from './stepB_reducer';
-import stepCReducer from './stepC_reducer';
+import accountReducer from './account_reducer';
+import socialReducer from './social_reducer';
+import personalReducer from './personal_reducer';
 
 const rootReducer = combineReducers({
-      stepAData:stepAReducer,
-      stepBData:stepBReducer,
-      stepCData:stepCReducer,
+      accountData:accountReducer,
+      socialData:socialReducer,
+      personalData:personalReducer,
 
 });
 export default rootReducer;

@@ -10,7 +10,6 @@ export default class App extends Component {
   }
    
   renderInputs(){
-    console.log(this.props)
  
     return _.map(this.props.placeholders,placeholder =>{
       let type="";
@@ -19,7 +18,7 @@ export default class App extends Component {
       if(this.props.shouldUsePassword)
        (placeholder.index===0? type="email":type="password")
       else
-        type="text";
+        type="text"
        
       return(
       <div className='form-group' key={placeholder.index} > 
@@ -52,9 +51,7 @@ export default class App extends Component {
         values.push(value);
   })
 
-     console.log(values)
      values[i].key=value;
-    console.log("reachded")
      this.props.setStateForThisComp(values);
 
    

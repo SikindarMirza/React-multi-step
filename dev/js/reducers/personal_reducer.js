@@ -5,15 +5,11 @@ export default function(state= [
    ],
 action){
 
-console.log("executin B reducer")
-console.log(state)
-if(action.type == 'STEPB_ACTION') {
-console.log(action)
+if(action.type == 'PERSONAL_ACTION') {
 return action.payload;
-
 }
 else
 {
-return state;
+   return state;
 }
 }

@@ -1,32 +1,26 @@
-export function setAppLevelStateForA(data)
+export function setAppLevelStateForAccount(data)
 {
-    console.log("a is here");
   return(
   {
-
-    type:'STEPA_ACTION',
+    type:'ACCOUNT_ACTION',
     payload:data
   });
 }
 
-export function setAppLevelStateForB(data)
+export function setAppLevelStateForSocial(data)
 {
-    console.log("b is here");
   return(
   {
-
-    type:'STEPB_ACTION',
+    type:'SOCIAL_ACTION',
     payload:data
   });
 }
 
-export function setAppLevelStateForC(data)
+export function setAppLevelStateForPersonal(data)
 {
-    console.log("c is here");
   return(
   {
-
-    type:'STEPC_ACTION',
+    type:'PERSONAL_ACTION',
     payload:data
   });
 }

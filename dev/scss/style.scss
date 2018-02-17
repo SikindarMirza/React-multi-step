@@ -17,7 +17,7 @@ input {
 
 .form {
   z-index: -1;
-  margin: 100px auto;
+  margin: 150px auto;
   background: white;
   border: 0 none;
   border-radius: 3px;
@@ -53,6 +53,7 @@ body {
 
 
 #progressbar {
+  margin-top: 30px;
   margin-bottom: 30px;
   overflow: hidden;
   /*CSS counters to number the steps*/

@@ -5,15 +5,11 @@ export default function(state= [
    ],
 action){
 
-console.log("executin C reducer")
-console.log(state)
-if(action.type == 'STEPC_ACTION') {
-console.log(action)
+if(action.type == 'SOCIAL_ACTION') {
 return action.payload;
-
 }
 else
 {
-   return state;
+return state;
 }
 }
