@@ -6,14 +6,13 @@ require('../../scss/style.scss');
 export default class App extends Component {
   constructor(props){
     super(props);
-    this.state={values:[{key:"",index:0},{key:"",index:1},{key:"",index:2}]};
+    this.state={values:[{key:"",index:0},{key:"",index:1},{key:"",index:2},{key:"",index:3}]};
   }
    
   renderInputs(){
  
     return _.map(this.props.placeholders,placeholder =>{
-      let type="";
-      let validate=""
+      let type="text";
 
       if(this.props.shouldUsePassword)
         (placeholder.index===0? type="email":type="password")

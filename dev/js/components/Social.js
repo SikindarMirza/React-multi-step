@@ -28,8 +28,6 @@ export  class Social extends Component{
             <App placeholders={[{index:0,key:"Twitter"},{key:"Facebook",index:1},{key:"Google Plus",index:2}]}
                   values={this.props.socialData}
                   setStateForThisComp={this.props.setAppLevelStateForSocial}
-                  shouldUsePassword={false}
-                  shouldUseNumber={false}
                   />
             <Link to="/">
               <button className="button">Previous</button>
